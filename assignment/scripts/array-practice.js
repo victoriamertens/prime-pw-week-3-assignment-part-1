@@ -13,7 +13,7 @@ let vicFavFoods = [ 'Pad Thai', 'Sushi', 'Crab', 'Salmon', 'Singapore Noodles'];
 // 1.b. TODO: Log your array of foods to the console with a message, similar 
 //      to the example above
 
-console.log("My favorite foods are", vicFavFoods);
+console.log("My favorite foods are:", vicFavFoods);
 
 // 2. Array.length - tells you how many items are in the array
 console.log('--- 2. Length of an array ---');
@@ -22,7 +22,7 @@ console.log('--- 2. Length of an array ---');
 console.log('Number of animals:', animalArray.length);
 
 // 2.a. TODO: Log to the console the number of foods in your array
-console.log("Number of favoriet foods", vicFavFoods.length);
+console.log("Number of favoriet foods:", vicFavFoods.length);
 
 // 3. Accessing array items
 console.log('--- 3. Accessing items in an array ---');
@@ -54,8 +54,8 @@ console.log('The new array is', vicFavFoods);
 
 // Example: Remove the last animal by using Array.pop
 let removedAnimal = animalArray.pop();
-console.log('Removed the last animal', removedAnimal);
-console.log('The animals are now', animalArray);
+console.log('Removed the last animal:', removedAnimal);
+console.log('The animals in the array are now:', animalArray);
 
 // 4.b. TODO: Remove the food at the end of your array & 
 //      log both the food removed and the updated array
@@ -74,7 +74,7 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
 vicFavFoods.unshift('Fettichini Alfredo'); 
-console.log('The new food array is', vicFavFoods);
+console.log('Added a food to beginning, new array is:', vicFavFoods);
 
 // Example: Remove the first animal using Array.shift
 removedAnimal = animalArray.shift();
@@ -91,7 +91,7 @@ console.log('The food array is now', vicFavFoods);
 //      with another one of your favorite foods.
 //      Then log the updated array.
 vicFavFoods[1] = 'Broccolinni'; 
-console.log("I replaced the second food in the array, it is now", vicFavFoods); 
+console.log("I replaced the second food in the array, the array is now:", vicFavFoods); 
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
@@ -106,7 +106,7 @@ console.log(reverseAlpha);
 
 let stringFavFoods = vicFavFoods.toString();
 let andString = stringFavFoods.replaceAll(',', ' and ');
-console.log(andString);
+console.log('The food array as a string is:', andString);
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
@@ -115,4 +115,4 @@ console.log(andString);
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
 
 let concatFoodAnimal = vicFavFoods.concat(animalArray); 
-console.log(concatFoodAnimal); 
+console.log("The combined array is:", concatFoodAnimal); 
